@@ -8,7 +8,7 @@ runtime:
 
 integrations:
   hub:
-    - integrationName: GCE - jeef.me
+    - integrationName: gcloud
       type: gcloudKey
 
 build:
