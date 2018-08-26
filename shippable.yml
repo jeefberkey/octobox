@@ -19,7 +19,7 @@ build:
   - docker tag ruby-2.5.1-alpine-arm us.gcr.io/jeefme-185614/ruby:2.5.1-alpine
 
   - docker build -t us.gcr.io/jeefme-185614/octobox:$COMMIT.$BUILD_NUMBER .
-  - docker tag us.gcr.io/jeefme-185614/octobox:$COMMIT.$BUILD_NUMBER us.gcr.io/jeefme-185614/octobox:latest
+  - docker tag us.gcr.io/jeefme-185614/octobox:$COMMIT.$BUILD_NUMBER us.gcr.io/jeefme-185614/octobox:latest-ci
   - docker push us.gcr.io/jeefme-185614/octobox:$COMMIT.$BUILD_NUMBER
-  - docker push us.gcr.io/jeefme-185614/octobox:latest
+  - docker push us.gcr.io/jeefme-185614/octobox:latest-ci
 
